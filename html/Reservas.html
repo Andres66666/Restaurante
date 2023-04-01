@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVAS</title> 
+    <link rel="stylesheet" type="text/css" href="../css/reservas.css">
+    <link rel="stylesheet" type="text/css" href="../css/boton.css">
+    <link rel="stylesheet" type="text/css" href="../css/css/canvas.css">
+
+    <script type="text/javascript" src="../js/canvas.js"></script>
+    <script type="text/javascript" src="../js/Jquery.js"></script>
+    
+
+</head>
+<body>
+    <!-- aplicacionde canvas y DOM -->
+    <div class="boxs">
+        <canvas id="canvas"></canvas>
+        <h1 id="boton_click">👉Clik📆</h1>
+        <script type="text/javascript" src="../js/DOM.JS"></script>
+        <p id="demo"></p>
+    </div>
+    <div id="caja">
+        <div class="box">  
+            <h3 align="center"> <font size="3" color="black">🕵Realiza tu pedido📝📃</font></h3>
+            <form action="#" method="POST" id="formulario" onsubmit="return false" >  
+                <p>  
+                    <label for="nombre" ><strong>Nombres:</strong> <span id="error_nombre"></span></label>  
+                    <input type="text" name="nombre" id="nombre" value="" onkeypress="return soloLetras(event)" autofocus placeholder="Ingrese su nombre"/>  
+                </p> 
+                <p>  
+                    <label for="apellidos"><strong>Apellidos:</strong> <span id="error_apellidos"></span></label>  
+                    <input type="text" name="apellidos" id="apellidos" value="" placeholder="Ingrese su apellidos"/>  
+                </p> 
+                <p>  
+                    <label for="edad"><strong>Edad:</strong> <span id="error_edad"></span></label>  
+                    <input type="number" name="edad" id="edad" value="" placeholder="Ingrese su edad"/>  
+                </p>
+                <p>  
+                    <label for="fecha"><strong>Fecha:</strong><span id="error_fecha"></span></label>  
+                    <input type="date" name="fecha" id="fecha" value="" />
+                </p>
+                <p>  
+                    <label for="hora"><strong>Hora:</strong><span id="error_hora"></span></label> 
+                    <input type="time" name="Hora" id="hora" value="" />  
+                </p>
+                <p>
+                    <label form="mesa"><strong>Nemero de Mesa:</strong><span id="error_mesa"></span></label>
+                    <select name="mesa" id="mesa">
+                        <option value="Mesa0">Mesa0</option>
+                        <option value="Mesa1">Mesa1</option>
+                        <option value="Mesa2">Mesa2</option>
+                        <option value="Mesa3">Mesa3</option>
+                        <option value="Mesa4">Mesa4</option>
+                        <option value="Mesa5">Mesa5</option>
+                        <option value="Mesa6">Mesa6</option>
+                        <option value="Mesa7">Mesa7</option>
+                        <option value="Mesa8">Mesa8</option>
+                        <option value="Mesa9">Mesa9</option>
+                        <option value="Mesa10">Mesa10</option>
+                    </select>
+                </p>
+                <p>  
+                    <label for="direccion"><strong>Direccion:</strong><span id="error_direccion"></span></label> 
+                    <input type="text" name="direccion" id="direccion" value="" placeholder="Ingrese su direccion"/>  
+                </p>
+                <p>  
+                    <label for="correo"><strong>Correo:</strong><span id="error_correo"></span></label> 
+                    <input type="gmail" name="correo" id="correo" value="" placeholder="Ingrese su correo"/>  
+                </p>
+                <p>  
+                    <label for="numcelular"><strong>Celular:</strong><span id="error_numcelular"></span></label> 
+                    <input type="number" name="numcelular" id="numcelular" value="" pattern="[67][0-9]{7}" required placeholder="Ingre su nuemro" />  
+                </p>
+                <p>  
+                    <input type="submit" value="Enviar Pedido✅"  onclick="eviar()"/>  
+                    <input type = "reset" value="Borrar Pedido❌" onclick="alertas()" >
+                </p>  
+            </form>            
+        </div>  
+        <div class="dashed">  
+            <h3 align="center"> <font size="3" color="black"><strong>🕵Revisa tu Información Estimado 📝Usuario📃</strong></font></h3>  
+            <hr>
+            <font size="5" color="black">
+                <p id="p_nombre"><strong>Nombre</strong>: <span></span>  </p>  
+                <p id="p_apellidos"><strong>Apellidos:</strong> <span></span></p>  
+                <p id="p_edad"><strong>Edad:</strong><span></span></p> 
+                <p id="p_fecha"><strong>fecha:</strong><span></span></p>
+                <p id="p_hora"><strong>Hora:</strong><span></span></p> 
+                <p id="p_mesa"><strong>Mesa:</strong><span></span></p> 
+                <p id="p_direccion"><strong>Direccion:</strong> <span></span></p> 
+                <p id="p_correo"><strong>Correo:</strong> <span></span></p> 
+                <p id="p_numcelular"><strong>Celular:</strong> <span></span></p>
+            </font>
+            <br>
+        </div>
+    </div>
+    <div id="pedidos">
+            <!-- esta parte se estaplicando evento onclick para alertas -->
+        <script src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script>     
+            <button onclick="eviar()" >Enviar Pedido✅</button> 
+            <button onclick="alertas()" >cancelar Pedido❌</button> 
+            <script type="text/javascript" src="../js/eventos.js"></script>
+    </div>
+    <footer>
+        <div id="PosBoton"><a href="../index.html" title="volve a inicio" class="botton">☕</a></div>
+    </footer>  
+</body>
+</html>

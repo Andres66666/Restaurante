@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVASPLASTOS</title>
+    <link rel="stylesheet" type="text/css" href="../css/boton.css">
+    <link rel="stylesheet" type="text/css" href="../css/Platos.css">
+    <link rel="stylesheet" type="text/css" href="../css/CabPlatos.css">
+    <link rel="stylesheet" type="text/css" href="../css/boton.css">
+    <link rel="stylesheet" type="text/css" href="../css/drapANDdrop.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
+    
+    <script type="text/javascript" src="../js/Mosconten.js"></script>
+
+    <style>
+    #PosBotonRegreso{
+    position: fixed;
+    top: 300px;
+    right: 10px;
+    
+    }
+    .bottonRegreso{
+    text-decoration: none;
+    font-size: 50px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    }
+    .bottonRegreso:hover{
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+    </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+        <img width="250px" height="130px" align="left" src="../img/logo.png">
+        <div class="container">
+          <div draggable="true" class="box"><button onclick="mostrarImagenes()" class="boton-letras"><li><a name="volver">Platos Fuertes</a> </li></button></div>
+          <div draggable="true" class="box"><button onclick="mostrarImagenesCarneA_la_Parrilla()" class="boton-letras" ><li>Carnes a la Parrilla</li></button></div>
+          <div draggable="true" class="box"><button onclick="Guarniciones()" class="boton-letras"><li>Guarniciones</li></button></div>
+          <div draggable="true" class="box"><button onclick="Postres()" class="boton-letras" draggable="true" id="box"><li>Postres</li></button></div>
+          <div draggable="true" class="box"><button onclick="Bebidas()" class="boton-letras" draggable="true" id="box"><li>Bebidas</li></button></div>
+          <div draggable="true" class="box"><button onclick="Cocteles()" class="boton-letras" draggable="true" id="box"><li>Cocteles</li></button></div>
+          <div draggable="true" class="box"><button onclick="Vinos()" class="boton-letras" draggable="true" id="box"><li>Vinos</li></button></div>
+          <div draggable="true" class="box"><button onclick="Tinto()" class="boton-letras" draggable="true" id="box"><li>Tinto</li></button></div>
+
+        </div>
+    </ul>
+</nav>  
+<div class="container">
+    
+  </div>
+
+<br><br>
+<br><br>
+<br><br> 
+
+  <script type="text/javascript" src="../js/draDRop.js"></script>
+<div class="Scroll">
+ 
+<!-- 1 -->
+    <!-- PLATOS FUERTES -->
+<div id="mi-div0" class="oculto0">
+  <div class="gallery">
+    <h1>PLATOS FUERTES </h1>
+      <div>
+        <img src="https://www.gourmet.cl/wp-content/uploads/2016/09/Costillas-de-Cerdo-en-Salsa-Barbecue-ajustada-web.jpg" alt="Menu 1">
+        <p>COSTILLA DE CERDO GURMET</p>
+        <p> <em> Precio = Bs 50</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>  
+      </div>
+      <div>
+        <img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/05/recetas-con-costillas-de-cerdo-en-salsa.jpg" alt="Menu 2">
+        <p>COSTILLAS AL CARBON</p>
+        <p> <em> Precio = Bs 60</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="https://decomidaperuana.com/wp-content/uploads/2018/06/receta-de-costillas-a-la-bbq.jpg" alt="Menu 3">
+        <p>COSTILLA DE CERDO A LA BBQ</p>
+        <p> <em> Precio = Bs 40</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="https://cdn2.cocinadelirante.com/sites/default/files/images/2020/06/como-hacer-costillas-bbq-receta-facil.jpg" alt="Menu 3">
+        <p>COSTILLA BBQ</p>
+        <p> <em> Precio = Bs 60</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="https://www.gourmet.cl/wp-content/uploads/2016/09/Costillas-de-Cerdo-en-Salsa-Barbecue-ajustada-web.jpg" alt="Menu 1">
+        <p>COSTILLA DE CERDO GURMET</p>
+        <p> <em> Precio = Bs 50</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>  
+      </div>
+      <div>
+        <img src="https://www.cocina-boliviana.com/base/stock/Recipe/476-image/476-image_web.jpg" alt="Menu 3">
+            <p>SOPA DE MANI</p>
+            <p> <em> Precio = Bs 30</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="https://comidasbolivianas.org/wp-content/uploads/2020/07/cazuela-de-pollo-receta-boliviana.jpg" alt="Menu 3">
+        <p>CAZUELA DE POLLO</p>
+        <p> <em> Precio = Bs 10</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="https://cdn.bolivia.com/gastronomia/2011/07/28/sopa-de-pollo-vegetales-y-pasta-1643.gif" alt="Menu 3">
+            <p>SOPA DE POLLO Y VERDURAS</p>
+            <p> <em> Precio = Bs 20</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- otro menu -->
+<div id="mi-div1" class="oculto0">
+  <div class="gallery">
+    <h1>CARNES A LA PARRILA</h1>
+      <div>
+        <img src="../img/agnolotti y hongos a la parrilla.jpg" alt="Menu 1">
+        <p>COSTILLA DE CERDO GURMET</p>
+        <p> <em> Precio = Bs 50</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>  
+      </div>
+      <div>
+        <img src="../img/anticuchos de Corazón de pollo.jpg" alt="Menu 2">
+        <p>COSTILLAS AL CARBON</p>
+        <p> <em> Precio = Bs 60</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="../img/LOMITO A LA BRASA.jpg">
+        <p>COSTILLA DE CERDO A LA BBQ</p>
+        <p> <em> Precio = Bs 40</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="../img/Matambre de cerdo a la parrilla.jpg" alt="Menu 3">
+        <p>COSTILLA BBQ</p>
+        <p> <em> Precio = Bs 60</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="../img/Ojo de bife.jpg" alt="Menu 1">
+        <p>COSTILLA DE CERDO GURMET</p>
+        <p> <em> Precio = Bs 50</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>  
+      </div>
+      <div>
+        <img src="../img/panceta de cerdo a baja temperatura.jpg" alt="Menu 3">
+            <p>SOPA DE MANI</p>
+            <p> <em> Precio = Bs 30</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="../img/Pechuga de pollo crocante gratinada.jpg" alt="Menu 3">
+        <p>CAZUELA DE POLLO</p>
+        <p> <em> Precio = Bs 10</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="../img/pesca del día a la brasa.jpg" alt="Menu 3">
+            <p>SOPA DE POLLO Y VERDURAS</p>
+            <p> <em> Precio = Bs 20</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- guarniciones -->
+<div id="mi-div2" class="oculto0">
+  <div class="gallery">
+    <h1>GUARNICIONES</h1>
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ_twwf6frF739t5VuZFjsDwtVYegTUrbGyg&usqp=CAU" alt="Menu 1">
+        <p>COSTILLA DE CERDO GURMET</p>
+        <p> <em> Precio = Bs 50</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>  
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/originals/45/0a/ee/450aee76f9cc9d4e220f1eb43dd9e142.jpg" alt="Menu 2">
+        <p>COSTILLAS AL CARBON</p>
+        <p> <em> Precio = Bs 60</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="http://s3.amazonaws.com/photography.prod.demandstudios.com/a3b79dca-c7da-47d3-bf1c-aa1db3b70721.jpg">
+        <p>COSTILLA DE CERDO A LA BBQ</p>
+        <p> <em> Precio = Bs 40</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="https://img-aws.ehowcdn.com/750x400p/s3.amazonaws.com/photography.prod.demandstudios.com/ff9a0b08-d2a3-4d51-8a5d-2ee02ca92bfc.jpg" alt="Menu 3">
+        <p>COSTILLA BBQ</p>
+        <p> <em> Precio = Bs 60</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="http://s3.amazonaws.com/photography.prod.demandstudios.com/a3b79dca-c7da-47d3-bf1c-aa1db3b70721.jpg" alt="Menu 1">
+        <p>COSTILLA DE CERDO GURMET</p>
+        <p> <em> Precio = Bs 50</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>  
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/236x/46/de/1d/46de1d4dd5dd1cd1e9a085ea9ccdbe84--nye-ideas-wedding-dinner.jpg" alt="Menu 3">
+            <p>SOPA DE MANI</p>
+            <p> <em> Precio = Bs 30</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="https://static.dw.com/image/15800920_303.jpg" alt="Menu 3">
+        <p>CAZUELA DE POLLO</p>
+        <p> <em> Precio = Bs 10</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/originals/79/83/3b/79833b3f1c7ef483b633fda3caa971d3.jpg" alt="Menu 3">
+            <p>SOPA DE POLLO Y VERDURAS</p>
+            <p> <em> Precio = Bs 20</em></p>
+        <form>
+          Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+			    <input type="reset" value="Borrar">
+        </form>
+      </div>
+    </div>
+  </div>
+    <!-- postres -->
+    <div id="mi-div3" class="oculto0">
+      <div class="gallery">
+        <h1>POSTRES</h1>
+          <div>
+            <img src="https://media.scoolinary.app/blog/images/2021/01/flan-scoolinary1.jpg" alt="Menu 1">
+            <p>COSTILLA DE CERDO GURMET</p>
+            <p> <em> Precio = Bs 50</em></p>
+            <form>
+              Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+              <input type="reset" value="Borrar">
+            </form>  
+          </div>
+          <div>
+            <img src="https://mui.kitchen/__export/1630010256958/sites/muikitchen/img/2021/08/26/flan-1985515.jpg_349668402.jpg" alt="Menu 2">
+            <p>COSTILLAS AL CARBON</p>
+            <p> <em> Precio = Bs 60</em></p>
+            <form>
+              Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+              <input type="reset" value="Borrar">
+            </form>
+          </div>
+          <div>
+            <img src="https://portales.vilbo.com/files/uploads/images/Noticies/2019/09/banana-musubi-portada.jpg">
+            <p>COSTILLA DE CERDO A LA BBQ</p>
+            <p> <em> Precio = Bs 40</em></p>
+            <form>
+              Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+              <input type="reset" value="Borrar">
+            </form>
+          </div>
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ts8EPyvQTapgVfozJrbMpFiwHFHnn2UMsSRfaLvTb3cQg19qVrqQayeO2eyswkTIiew&usqp=CAU" alt="Menu 3">
+            <p>COSTILLA BBQ</p>
+            <p> <em> Precio = Bs 60</em></p>
+            <form>
+              Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+              <input type="reset" value="Borrar">
+            </form>
+          </div>
+          <div>
+            <img src="https://clubcocina.es/wp-content/uploads/2022/03/que-es-postre-de-restaurante.jpg" alt="Menu 1">
+            <p>COSTILLA DE CERDO GURMET</p>
+            <p> <em> Precio = Bs 50</em></p>
+            <form>
+              Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+              <input type="reset" value="Borrar">
+            </form>  
+          </div>
+          <div>
+            <img src="https://assets.afcdn.com/album/D20160512/phalbm24811843_w320.webp" alt="Menu 3">
+                <p>SOPA DE MANI</p>
+                <p> <em> Precio = Bs 30</em></p>
+            <form>
+              Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+              <input type="reset" value="Borrar">
+            </form>
+          </div>
+          <div>
+            <img src="https://assets.afcdn.com/album/D20160512/phalbm24811648.jpg" alt="Menu 3">
+            <p>CAZUELA DE POLLO</p>
+            <p> <em> Precio = Bs 10</em></p>
+            <form>
+              Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+              <input type="reset" value="Borrar">
+            </form>
+          </div>
+          <div>
+            <img src="https://enlacocina.b-cdn.net/wp-content/uploads/2018/07/bebidas-refrescantes-992x640.jpg" alt="Menu 3">
+                <p>SOPA DE POLLO Y VERDURAS</p>
+                <p> <em> Precio = Bs 20</em></p>
+            <form>
+              Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+              <input type="reset" value="Borrar">
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- 5 -->
+    <!-- BEBIDAS -->
+    <div id="mi-div4" class="oculto0">
+      <div class="gallery">
+        <h1>BEBIDAS</h1>
+          <div>
+              <img src="https://vivanda.vtexassets.com/arquivos/ids/184283/664608.jpg?v=637252431339800000" alt="Menu 1">
+              <p>AGUA SIN GAS (330ML)</p>
+              <p> <em> Precio = Bs 9</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://drinkyexpress.com/wp-content/uploads/2020/03/Agua-G%C3%BCitig-con-Gas-330ml.jpg" alt="Menu 2">
+              <p>AGUA CON GAS (330ML)</p>
+              <p> <em> Precio = Bs 9</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/0492/2458/1274/products/supermercados_la_vaquita_supervaquita_gaseosa_coca_cola_600_ml_bebidas_liquidas_700x700.jpg?v=1620489414" alt="Menu 3">
+              <p>GASEOSA LINEA COCA COLA (600ML)</p>
+              <p> <em> Precio = Bs 15 </em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://www.megalicor.bo/wp-content/uploads/2020/10/20030132.jpg" alt="Menu 4">
+              <p>AGUA TONICA DOÑA MARIA (215ML) </p>
+              <p> <em> Precio = Bs 15 </em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://cdn-dbcoo.nitrocdn.com/WOBYYbBYmELzZfXAiTOMtWvJwVvkabTU/assets/images/optimized/rev-3f2dcf6/image/cache/catalog/product/6020131-550x550.jpg" alt="Menu 5">
+              <p>GASEOSA LINEA FANTA (600ML)</p>
+              <p> <em> Precio = Bs 9</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://www.cremapasteleria.com/wp-content/uploads/2020/07/Crema-Menu-Digital-Sprite-600-ml-Refresco-600x600px.png" alt="Menu 6">
+              <p>GASEOSA LINEA SPRITE (600ML)</p>
+              <p> <em> Precio = Bs 9</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://www.ketal.com.bo/image/cache/catalog/product/80170435-550x550.jpg" alt="Menu 7">
+              <p>BEBIDA ACUARIUS POMELO (500 ML)</p>
+              <p> <em> Precio = Bs 15</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/0368/1363/5716/products/7771609003794_512x512.jpg?v=1671211945" alt="Menu 8">
+              <p>JUGO DEL VALLE MANAZANA (300 ML)</p>
+              <p> <em> Precio = Bs 15</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+      </div>
+  </div>
+    <!-- 6 -->
+    <!-- COCTELES -->
+    <!-- CLASICOS -->
+    <div id="mi-div5" class="oculto0">
+      <div class="gallery">
+        <h1>COCTELES</h1>
+          <div>
+              <img src="https://www.196flavors.com/wp-content/uploads/2018/12/chuflay-2.jpg" alt="Menu 1">
+              <p>CHUFLAY</p>
+              <p> <em> Precio = Bs 30</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://www.faragulla.com/wp-content/uploads/2015/10/Boulevardier-01.jpg" alt="Menu 2">
+              <p>BOULEVARDIER</p>
+              <p> <em> Precio = Bs 40</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://okdiario.com/img/recetas/2017/08/18/receta-de-coctel-negroni-2.jpg" alt="Menu 3">
+              <p>NEGRONI</p>
+              <p> <em> Precio = Bs 40 </em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://mlpi71nkzvk3.i.optimole.com/w:780/h:439/q:mauto/https://deviajerosytragones.com/wp-content/uploads/2020/09/campari-orange.jpg" alt="Menu 4">
+              <p>COMPARI ORANGE </p>
+              <p> <em> Precio = Bs 35 </em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://www.cocina-cubana.com/base/stock/Recipe/299-image/299-image_web.jpg" alt="Menu 5">
+              <p>MOJITO</p>
+              <p> <em> Precio = Bs 35</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://www.petitchef.es/imgupl/recipe/spritz-el-famoso-coctel-italiano-con-aperol--456167p709275.jpg" alt="Menu 6">
+              <p>SPRITZ</p>
+              <p> <em> Precio = Bs 45</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <!-- TONICS-->
+          <div>
+              <img src="https://www.paulinacocina.net/wp-content/uploads/2022/05/gin-tonic-receta.jpg" alt="Menu 7">
+              <p>GIN Y TONIC</p>
+              <p> <em> Precio = Bs 40</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://www.roncihuatan.com/latam/wp-content/uploads/sites/3/2020/03/Citrus-Tonic.png" alt="Menu 8">
+              <p>CITRUS TONIC</p>
+              <p> <em> Precio = Bs 40</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://santacesta.es/blog/wp-content/uploads/2021/05/santacesta-blog-calorias-gintonic-01.jpg" alt="Menu 9">
+              <p>TONIC DEL JARDIN</p>
+              <p> <em> Precio = Bs 40</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6dxojXdGs-7eibLE4g6hUVYePdIVjs-Q3bfZZOvRkRPmhvqK431l2wYVfjoBrQvsW1rE&usqp=CAU" alt="Menu 10">
+              <p>TONIC PICA PICA</p>
+              <p> <em> Precio = Bs 40</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://media.diageocms.com/eyJrZXkiOiJtZWRpYS92b2dwaXNvdC9iYXJjb21fc2VydmVfaW1hZ2Vfdm9ka2EtbGltZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiaGVpZ2h0Ijo2MTAsIndpZHRoIjo2MTB9fX0=" alt="Menu 11">
+              <p>VODKA Y TONIC</p>
+              <p> <em> Precio = Bs 40</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <!-- DE LA CASA -->
+          <div>
+              <img src="https://i.pinimg.com/474x/6b/f8/62/6bf8623d155a6b628efd9e7c1d31c14a.jpg" alt="Menu 12">
+              <p>COCTELITO DE TUMBO</p>
+              <p> <em> Precio = Bs 30</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://3.bp.blogspot.com/-4WL0Tj4B5f4/WYp6OtCOLEI/AAAAAAAAYOo/cNbbMBJOSI0Q5kJCw9wDIDMpf3vEw5r_ACLcBGAs/s1600/Singani%2BSour.jpg" alt="Menu 13">
+              <p>SINGANI SOUR</p>
+              <p> <em> Precio = Bs 30</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://images.absolutdrinks.com/drink-images/Raw/Absolut/c043dc76-df08-44a0-9856-4ccbbdb5d068.jpg" alt="Menu 14">
+              <p>KILLA SOUR</p>
+              <p> <em> Precio = Bs 35</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://perudelights.com/wp-content/uploads/2016/05/13010742_1176233409068260_46227225765673722_n.jpg" alt="Menu 15">
+              <p>CHIRIMOYA ALEGRE</p>
+              <p> <em> Precio = Bs 35</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://previews.123rf.com/images/wiktory/wiktory1504/wiktory150400076/39494857-c%C3%B3ctel-bloody-mary-con-tocino-y-el-apio-el-enfoque-selectivo.jpg" alt="Menu 16">
+              <p>BACON BLOODY MARY</p>
+              <p> <em> Precio = Bs 35</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+      </div>
+  </div>
+    <!-- 7 -->
+    <!-- VINO -->
+    <!-- ESPUMANTE -->
+    <div id="mi-div6" class="oculto0">
+      <div class="gallery">
+        <h1>VINOS</h1>
+          <div>
+              <img src="https://megalicor.bo/wp-content/uploads/2020/05/10160072.jpg" alt="Menu 1">
+              <p>NV BRUT / ALTO SAMA, TARIJA</p>
+              <p> <em> Precio = Bs 120</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://scontent.flpb1-1.fna.fbcdn.net/v/t1.6435-9/81092845_2666982300016597_8367561187075817472_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=973b4a&_nc_ohc=-psGPa3viNMAX86Rq3x&_nc_ht=scontent.flpb1-1.fna&oh=00_AfCLsFywYXa9RM_CXqvD2m4Mi-FlZa-hMZYRAVTv02MPKg&oe=64485A5B"
+                  alt="Menu 2">
+              <p>2020 PET NAT / MARQUEZ DE LA VIÑA, VINTO </p>
+              <p> <em> Precio = Bs 225</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://bebidasyjugos.com/wp-content/uploads/2016/07/Nietos-de-Asturias-Puomo-Manzana-2.png" alt="Menu 3">
+              <p>2021 SIDRA DE MANZANA / VIVEZA CRIOLLA, LA PAZ </p>
+              <p> <em> Precio = Bs 150 </em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <!-- ROSADO -->
+          <div>
+              <img src="https://winestore.com.bo/wp-content/uploads/2023/01/7772115830027.webp" alt="Menu 4">
+              <p>2021 ROSE / CAÑON ESCONDIDO, TARIJA </p>
+              <p> <em> Precio = Bs 150 </em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://eyava.com/28047-large_default/vino-1750-syrah-rose-750-ml.jpg" alt="Menu 5">
+              <p>2021 SYRAH ROSE/ 1750, SAMAIPATA </p>
+              <p> <em> Precio = Bs 150</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://www.bebidaonline.com.br/media/catalog/product/cache/1/thumbnail/800x/99cfa2db909aa8be0aba7059fa3f7550/v/i/vinho_marques_de_casa_concha_cinsault_rose.jpg" alt="Menu 6">
+              <p>2021 ROSE / MARQUEZ DE LA VIÑA, VINTO </p>
+              <p> <em> Precio = Bs 200</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <!-- DULCE (POR COPA) -->
+          <div>
+              <img src="https://pbs.twimg.com/media/FWoIZ_3WYAE4FnO.jpg" alt="Menu 7">
+              <p>2021 VISCHOQUEÑA "FAUXPORTO"</p>
+              <p> <em> Precio = Bs 35</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://scontent.flpb1-2.fna.fbcdn.net/v/t39.30808-6/294208597_464868838974259_4341013025177905195_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=yed9SHHJvHgAX8LI0F7&_nc_oc=AQl1cOF4SfvB3-CrcvB_3oQt-9doj24v3Z2uZbl1KyhKimJinpCdl03vUNqHq8OE7a4&_nc_ht=scontent.flpb1-2.fna&oh=00_AfCvm33efTIGTZGISuBXOlSOAW3GUW0sQslAdAAQZZM5zA&oe=6426D54C"
+                  alt="Menu 8">
+              <p>2021 MOSCATEL "FINAL FELIZ"  </p>
+              <p> <em> Precio = Bs 30</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <!-- BLANCO -->
+          <div>
+              <img src="https://scontent.flpb1-2.fna.fbcdn.net/v/t39.30808-6/216194545_337608221361701_6235210814959084236_n.jpg?stp=dst-jpg_s640x640&_nc_cat=110&ccb=1-7&_nc_sid=a26aad&_nc_ohc=1DOpS2KcCgMAX9kvNCg&_nc_ht=scontent.flpb1-2.fna&oh=00_AfC_Trr7xmjMFlDw1U-0Ed5KpWAhnoVjdnDxPTPO7MIg7Q&oe=6426BFD4"
+                  alt="Menu 9">
+              <p>2020 MOSCATEL DE ALEJANDRÍA/ MAGNUS, TARIJA</p>
+              <p> <em> Precio = Bs 160</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://bodegasmagnus.com.bo/wp-content/uploads/2021/02/G91A8562-compressed-683x1024.jpg" alt="Menu 10">
+              <p>2020 SAUVIGNON BLANC / MAGNUS, TARIJA</p>
+              <p> <em> Precio = Bs 160</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://bodegasmagnus.com.bo/wp-content/uploads/2021/02/G91A8558-compressed-2-300x450.jpg" alt="Menu 11">
+              <p>2021 "LOCURA" / MAGNUS, TARIJA</p>
+              <p> <em> Precio = Bs 180</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://bebidasserrano.com/319-home_default/romeria-montilla-moriles-fino.jpg" alt="Menu 12">
+              <p>2020 MOSCATEL DE ALEJANDRIA / JARDIN OCULTO, SAN ROQUE </p>
+              <p> <em> Precio = Bs 225</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://scontent.flpb1-1.fna.fbcdn.net/v/t39.30808-6/231575049_1518333378559069_1506003976398461696_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a26aad&_nc_ohc=ivqSutXJvjcAX-uPNh9&_nc_ht=scontent.flpb1-1.fna&oh=00_AfDck8U18bTOPzX0SsV4ggq2HGAWRieahUFjfKQ_hHfzBg&oe=64256933"
+                  alt="Menu 11">
+              <p>2020 BLANC DE NOIR/ JARDIN OCULTO, SAN ROQUE</p>
+              <p> <em> Precio = Bs 225</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://scontent.flpb1-1.fna.fbcdn.net/v/t39.30808-6/269832575_206505075020409_5771796293531908067_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=pcqdxeyfHpwAX-XWG0d&_nc_ht=scontent.flpb1-1.fna&oh=00_AfDqg9_-qPQg_wp_7iBr184EFjHtHj6lGF8iZ9_wUBEjmA&oe=642553B6"
+                  alt="Menu 12">
+              <p>2021 ORANGE / CEPA DE ORO, CAMARGO</p>
+              <p> <em> Precio = Bs 225</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://scontent.flpb1-2.fna.fbcdn.net/v/t39.30808-6/328135199_1160785081245491_4867714446688622768_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=8gaVu7_k6dMAX-jrYdk&_nc_ht=scontent.flpb1-2.fna&oh=00_AfBByeLa2O5-EAAAYisB0zs3ojJdGtiBDxhvwuJKNWiuHw&oe=642578B4"
+                  alt="Menu 13">
+              <p>2021 PEDRO XIMENEZ / CEPA DE ORO, CAMARGO</p>
+              <p> <em> Precio = Bs 225</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://images.squarespace-cdn.com/content/v1/5c27a4baaf2096648cbb3f8f/1552354095199-1UY1GPXC4OUH5C5QEJ1N/IMG_7451.JPG" alt="Menu 14">
+              <p>2019 TORRONTES/ 1750, SAMAIPATA</p>
+              <p> <em> Precio = Bs 140</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://scontent.flpb1-1.fna.fbcdn.net/v/t1.6435-9/117996002_3095879753781185_7482975748395964351_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=104&ccb=1-7&_nc_sid=8024bb&_nc_ohc=sWEEgr8-5x8AX9kwqqd&_nc_ht=scontent.flpb1-1.fna&oh=00_AfBsFz-JjOjfVYjQTXNxH3n3HtR4xU1WsD06xI-obCq6dw&oe=64485CC8"
+                  alt="Menu 15">
+              <p>2020 CHARDONNAY / 1750, SAMAIPATA</p>
+              <p> <em> Precio = Bs 225</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <!-- 8 -->
+    <!-- TINTO -->
+    <div id="mi-div7" class="oculto0">
+      <div class="gallery">
+        <h1>TINTO</h1>
+          <div>
+              <img src="https://bodegasmagnus.com.bo/wp-content/uploads/2021/02/G91A8558-compressed-2-300x450.jpg" alt="Menu 1">
+              <p>2016 SANGIOVESE / MAGNUS, TARIJA</p>
+              <p> <em> Precio = Bs 170</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="http://bodegasmagnus.com.bo/wp-content/uploads/2020/10/Shyra.jpg" alt="Menu 2">
+              <p>2017 SYRAH-CAB SAV / MAGNUS, TARIJA</p>
+              <p> <em> Precio = Bs 170</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://bodegasmagnus.com.bo/wp-content/uploads/2020/10/Sangiovese-300x450.jpg" alt="Menu 3">
+              <p>2015 TRIVARIETAL / MAGNUS, TARIJA</p>
+              <p> <em> Precio = Bs 235</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://winestore.com.bo/wp-content/uploads/2023/01/7772115830027.webp" alt="Menu 4">
+              <p>2021 TANNAT / CAÑON ESCONDIDO, TARIJA</p>
+              <p> <em> Precio = Bs 275</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://winestore.com.bo/wp-content/uploads/2023/01/barbacana_blend_1.webp" alt="Menu 5">
+              <p>2020 TANNAT / BARBACANA, TARIJA</p>
+              <p> <em> Precio = Bs 200</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://www.ketal.com.bo/image/cache/catalog/product/80169818-1000x1000.jpg" alt="Menu 6">
+              <p>2019 TANNAT "JUAN CRUZ" / ARANJUEZ, TARIJA</p>
+              <p> <em> Precio = Bs 580</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="data:image/jpeg;base64,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"
+                  alt="Menu 7">
+              <p>2021 CABERNET SAUVIGNON / TIERRA ROJA, VILLA ABECIA </p>
+              <p> <em> Precio = Bs 200</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://scontent.flpb1-2.fna.fbcdn.net/v/t1.18169-9/29595265_2061198823896698_7342438334908633719_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=973b4a&_nc_ohc=EmY86iaru8EAX-N0SI-&_nc_ht=scontent.flpb1-2.fna&oh=00_AfB3Qzc1UMXEpyH4A4Duna71vF3IAVzME_PBFOzhS27YtA&oe=644846CC"
+                  alt="Menu 8">
+              <p>2021 VISCHOQUEÑA "DON CHRISTIAN" / TIERRA ROJA </p>
+              <p> <em> Precio = Bs 200</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://www.loscavistas.com/media/catalog/product/cache/596857605e76760627ff07aa6e8f9a78/r/u/rucahue-tierra-roja_s_.jpg" alt="Menu 9">
+              <p>2022 MALBEC / TIERRA ROJA, VILLA ABECIA </p>
+              <p> <em> Precio = Bs 200</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://historyandwinedotcom.files.wordpress.com/2020/11/img_5176.jpg?w=480" alt="Menu 10">
+              <p>2020 NEGRA CRIOLLA / JARDIN OCULTO, SAN ROQUE </p>
+              <p> <em> Precio = Bs 225</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://torrevieja.com/tienda/wp-content/uploads/2021/01/Vino-de-La-Mata-Torrevieja-Sopla-Levante-PINOMAR-1-380x285.jpg" alt="Menu 11">
+              <p> 2020 MALBEC / SAN FRANCISCO DE LA HORCA</p>
+              <p> <em> Precio = Bs 210</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://media.drinksandco.com/wines/convento-san-francisco-crianza-1406607-s606.jpg" alt="Menu 12">
+              <p>2020 MERLOT / SAN FRANCISCO DE LA HORCA </p>
+              <p> <em> Precio = Bs 210</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://scontent.flpb1-1.fna.fbcdn.net/v/t39.30808-6/269832575_206505075020409_5771796293531908067_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=pcqdxeyfHpwAX-XWG0d&_nc_ht=scontent.flpb1-1.fna&oh=00_AfDqg9_-qPQg_wp_7iBr184EFjHtHj6lGF8iZ9_wUBEjmA&oe=642553B6"
+                  alt="Menu 13">
+              <p>2021 MISIONERA / CEPA DE ORO</p>
+              <p> <em> Precio = Bs 225</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+          <div>
+              <img src="https://winestore.com.bo/wp-content/uploads/2022/12/7772115570039.webp" alt="Menu 14">
+              <p>2020 CABERNET SAUVIGNON / MARQUEZ DE LA VIÑA, VINTO </p>
+              <p> <em> Precio = Bs 200</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+
+          <div>
+              <img src="https://images.vivino.com/labels/WgZtPvk_SS-sHW9uwLOGlg.jpg" alt="Menu 15">
+              <p>2020 TANNAT-BONARDA / MARQUEZ DE LA VIÑA, VINTO </p>
+              <p> <em> Precio = Bs 200</em></p>
+              <form>
+                  Cantidad: <input type="number" name="Cantida" min="1" max="10" placeholder=" 1 a 10 ">
+                  <input type="reset" value="Borrar">
+              </form>
+          </div>
+      </div>
+  </div>
+
+</div>
+  <!-- esto es la segunda parte de del boton -->
+    <div class="pedidos">
+      <form>
+        <input type ="submit" value="Enviar lista">
+        <input type ="submit" value="Borrar Pedidos">
+        <input type ="submit" value="Ver los Pedidos">
+        <input type ="submit" value="Cerrar lista">
+      </form>
+    </div>
+    <footer>
+   
+      <div id="PosBotonRegreso" class="bottonRegreso"><a class="bottonRegreso" href="#volver" title="volve a inicio">♻</a></div>
+    </footer>
+    <br>
+    <footer>
+      <div id="PosBoton"><a href="../index.html" title="volve a inicio" class="botton">☕</a></div>
+    </footer>
+</body>
+</html>

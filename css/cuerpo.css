@@ -1,0 +1,114 @@
+/*logotipo*/
+#logotipo{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+#logotipo img{
+    opacity: 0.80;
+	display: block;
+	margin: auto;
+}
+/*fin logotipo*/
+
+#contenido{	
+    /*
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5 ));*/
+	background-size: 10%;		
+	padding-left: 10px;  
+	padding-top: 10px;
+	padding-right: 200px;
+	margin-right: 20px;
+	margin-left: 200px;
+}
+#contenido h1{
+    color: greenyellow;	
+}
+#contenido p{
+    color: aliceblue;	
+}
+.primeraseccion { /*primeraseccion*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.primeraseccion img {
+    width: 100%;
+    max-width: 400px;
+}
+.primeraseccion p { 
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 20px;
+	font-size: 30px;
+}
+.texto0{
+	font-size: 30px; /*esto es para el tamno de la letra*/ 
+	line-height: 1.5; /*esto separa el espacio de letras*/
+	text-align: justify; /*txt por defecto */
+	padding-top: 10px;	/*espacio de tex superior*/ 
+	margin-right: 15px;/*fuera del margen derecha*/ 
+	margin-left: 10px;/*fuera del margen izquierda*/ 
+	padding-left: 10px;/*margen de letras izquierda*/ 	
+	padding-right: 10px;/*margen de letras derecha */ 
+	/*
+    background: linear-gradient(45deg, rgba(189, 155, 104, 0.527), rgba(117, 110, 44, 0.5), rgb(50, 187, 45) 100%);	
+*/
+}
+.texto0 img{ /* estro realiza lo que es el separado del texto con la imagen  */
+	margin-left: 25px;
+	margin-top: 10px;
+	cursor:cell; /**/
+}
+.texto0 p{
+	cursor:col-resize;
+}
+#imagen0 {
+	margin-left: 25px;
+	margin-top: auto;	
+	border-radius: 40px;
+	margin-right: 20px;
+	outline-width: 8px;
+	position:relative;/*manteine la pocion en us lugar*/
+	float: right;
+}
+
+/* articulo 1*/
+
+.texto1{
+	font-size: 30px; /*esto es para el tamno de la letra*/ 
+	line-height: 1.5; /*esto separa el espacio de letras*/
+	text-align: justify; /*txt por defecto */
+	padding-top: 10px;	/*espacio de tex superior*/ 
+	margin-right: 15px;/*fuera del margen derecha*/ 
+	margin-left: 10px;/*fuera del margen izquierda*/ 
+	padding-left: 10px;/*margen de letras izquierda*/ 	
+	padding-right: 10px;/*margen de letras derecha */ 
+	/*
+    background: linear-gradient(45deg, rgba(189, 155, 104, 0.527), rgba(117, 110, 44, 0.5), rgb(50, 187, 45) 100%);	
+*/
+}
+.texto1 img{ /* estro realiza lo que es el separado del texto con la imagen  */
+    margin-right: 25px;
+	margin-top: 10px;
+	cursor: move;
+}
+.texto1 p{
+	cursor: help;
+}
+#imagen1 {
+    margin-right: 25px;
+	margin-top: auto;	
+	border-radius: 40px;
+	margin-right: 20px;
+	outline-width: 8px;
+	position:relative;/*manteine la pocion en us lugar*/
+}
+
+article div h1{
+	align-content: center;
+	text-align: center;
+}
+article .texto0 div h1{
+	float: right;
+}

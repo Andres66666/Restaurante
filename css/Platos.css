@@ -1,0 +1,62 @@
+body {
+    background-image: url(https://th.bing.com/th/id/R.ed2ab0e0ab18bec3b9896fffe17597f8?rik=n4Svjn%2bJFhXI%2fw&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.gallery {
+  text-align: center;
+  display: block;
+  color: #000000;
+  font-size: 16px;
+  font-family: 'robotobold', Arial, Tahoma, Verdana;
+  font-weight: 100;
+  line-height: 18px;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.gallery div {
+  display: inline-block;
+    width: 250px;
+    /*ANCHO DEL CUADRO*/
+    height: 400px;
+    /*ALTURA DEL CUADRO*/
+    margin: 20px;
+    /*AJUSTE DEL GROSOR DE LOS MARGENES DEL CUADRO */
+    padding: 10px;
+    /*RELLENO DEL CUADRO*/
+    background-color: #e6e6a1;
+    /*COLOR DE FONDO DEL CUADRO*/
+    border-radius: 10px;
+    border-color: rgb(245, 98, 98) rgb(217, 255, 0) rgb(37, 194, 37) rgb(0, 162, 255);
+    border-width: 5px;
+    border-style: solid;
+}
+
+.gallery img {
+  height: 230px;
+    /*ALTURA DE LA IMAGEN*/
+    width: 235px;
+    /*ANCHO DE LA IMAGEN*/
+    display: block;
+    /*BLOQUEO DE PANTALLA*/
+    margin-bottom: 10px;
+    /*MARGEN INFERIOR*/
+    margin-top: 5px;
+    /*MARGEN SUPERIOR*/
+    border: rgb(150, 146, 146) 8px outset;
+    
+}
+.gallery img:hover {
+  transform: scale(1.2);
+}
+
+.gallery h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    align-content: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

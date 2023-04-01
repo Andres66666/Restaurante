@@ -1,0 +1,45 @@
+
+
+  /* Características del Scroll */
+.Scroll{
+    width: 1400px;
+    height:1000px;
+    /**background: linear-gradient(315deg, #f1f1f1 20%, #f0f8ff 0%);/*degradado interno*/
+    /*border-radius: 30px 0px 0px 30px;/*radio de la caja pricipal externa*/
+    /*box-shadow: 50px 10px 50px 10px rgb(47,47,47); /*degradado externo*/
+    padding: 20px;
+    text-align: justify;
+    margin: 50px auto;
+    overflow-y: auto;
+    margin-top: -100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 5em;
+
+}
+/* Definimos el ancho del Scroll */
+.Scroll::-webkit-scrollbar{
+    width: 30px; /*define el ancho del scroll*/
+}
+
+/* Definimos el color para el componente Thumb (pulgar) */
+.Scroll::-webkit-scrollbar-thumb{
+    background: linear-gradient(to right, rgb(205, 207, 70) 0%, #b1ff71 74%); /*se esta colocando un scroll verde */
+    /*border-radius: 10px;*/
+}
+/*efcto cuand opasa el maus se scroll con sombra */
+.Scroll::-webkit-scrollbar-thumb:hover{
+    box-shadow: 0px 0px 3px 2px rgb(230, 230, 230) inset; /*efectode la sombra box-shadow*/
+}
+
+.Scroll::-webkit-scrollbar-thumb:active{
+    box-shadow: 0px 0px 3px 2px rgb(230, 230, 230) inset;
+}
+
+/* Definimos el color para el componente Track */
+.Scroll::-webkit-scrollbar-track{
+    background-color:#e0d145; /*define el colore donde se desplaza el scroll*/
+    
+}

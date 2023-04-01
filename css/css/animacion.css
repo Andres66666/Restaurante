@@ -1,0 +1,11 @@
+.animacion{
+    padding-left: 100px;   
+    display: inline-block;     
+    width: 800px;
+    height: 100px;    
+}
+.animacion img{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}

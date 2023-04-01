@@ -1,0 +1,98 @@
+nav{
+  margin-top:10px;
+  text-align: center;
+}
+
+.boton-letras {    /*LETRAS DEL BOTON*/
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 16px;
+}
+.boton-letras li{
+  color: white;
+}
+nav ul button li:hover{
+  background-color:#2ECC71  ;
+  border-radius: 5px;
+  transform: scale(1.2);
+}
+nav ul button {
+    display: inline-block;
+    list-style: none;
+    margin-top: 40px;
+}
+nav li {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+nav ul button li:hover {
+    position: relative;
+}
+nav ul li {
+    display: block;
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul button li  {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.oculto0 {
+  display: none;
+}
+
+/*BOTONES DE ENVIOS */
+
+.pedidos{
+  margin-left: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 100PX;
+}
+input[type=text], select {
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+  transform: scale(1.9);
+}
+
+
+/*PERSPECTITA EN EL LOGOTPO*/
+nav ul  img{
+  transform-style: preserve-3d;
+  perspective-origin: 50% 50%; /**/
+  perspective: 600px; /**/
+  animation: spin 6s linear infinite;  /*VELOCIDAD DE ROTACION*/
+}
+  
+@keyframes spin {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);/*GRADOS DE ROTACION*/
+  }
+}

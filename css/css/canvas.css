@@ -1,0 +1,33 @@
+.canvas{  
+    width: 150px;  
+    height: 150px;  
+    float: left;  
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5 ));
+    margin-top: 30px;
+} 
+
+.boxs{
+    width: 200px;  
+    height: 290px;  
+    float: left;  
+    margin: auto; 
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5 ));
+    background-size: 50%;
+    align-content: center;
+    padding-top: 20px;  /*espacio de tex superior*/ 
+    margin-top: 30px;
+}
+.boxs h1{
+    color: chartreuse;
+    text-align: center;
+}
+.boxs p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.boxs canvas{
+    margin-left: 20px;
+}
+.boxs canvas:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,88 @@
+nav{
+    margin-top:10px;
+    text-align: center;
+    text-shadow: black 5px 5px 7px;
+}
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+}
+nav ul li:hover {
+    position: relative;
+    color: yellow;
+
+}
+nav ul li a {
+    display: block;
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li ul {
+    position: absolute;
+    display: none;
+    color: #ffffff;
+}
+nav ul li:hover ul {
+    display: block;
+    color: #ffffff;
+}
+nav ul li ul li {
+    opacity: 1;
+    color: #f8f8f8;
+}
+nav ul li ul li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul li ul li a:hover {
+    background-color:#2ECC71  ;
+
+}
+nav ul li a:hover{
+	background-color:#2ECC71 ;
+	border-radius: 5px;
+    transform: scale(1.2);
+    color: black;
+}
+
+.pedidos{
+    margin-left: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+ input[type=text], select {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+    transform: scale(1.9);
+  }
+  
